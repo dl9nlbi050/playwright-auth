@@ -6,3 +6,4 @@
 export { login, roleFromEnv, type RoleConfig, type StorageState } from "./auth.js";
 export { test, expect, type AuthFixtures } from "./fixtures.js";
 export { DEFAULT_STATE_DIR, DEFAULT_TTL_MS, readState, statePath, writeState } from "./storage.js";
+export { DEFAULT_MAX_AGE_MS, pruneStateDir, type PruneResult } from "./eviction/prune.js";
