@@ -67,10 +67,12 @@ folded to `_`:
 ## Layout
 
 ```
-src/auth.ts       role resolution and the API login
-src/storage.ts    state path, TTL and atomic checksummed cache
-src/fixtures.ts   test.extend wiring: authRole, authTtlMs, storageState, authLogin
-src/index.ts      public exports
+src/auth.ts            role resolution and the API login
+src/storage.ts         state path, TTL and atomic checksummed cache
+src/eviction/prune.ts  deletes expired envelopes, leaves .tmp files alone
+src/fixtures.ts        test.extend wiring: authRole, authTtlMs, storageState, authLogin
+src/index.ts           public exports
+test/eviction.spec.ts  prune behaviour
 ```
 
 ## Coverage and limits
